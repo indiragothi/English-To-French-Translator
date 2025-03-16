@@ -1,5 +1,7 @@
 # English-to-French Language Translation using Seq2Seq Model
 
+![Neural Language Translation Architecture](https://miro.medium.com/max/1400/1*EPDNg1M45JXkASby_HiVOg.png)
+
 ## Overview
 This project demonstrates the use of a Sequence-to-Sequence (Seq2Seq) model for English-to-French translation. By leveraging deep learning techniques, particularly Neural Machine Translation (NMT), the model efficiently translates English sentences into French. The model is trained end-to-end, ensuring improved fluency and accuracy compared to traditional statistical machine translation methods.
 
