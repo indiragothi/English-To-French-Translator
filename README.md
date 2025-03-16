@@ -1,37 +1,41 @@
-# English-to-French-Language-Translation-using-Seq2Seq-Modeling
-
-A sequence to sequence (Seq2Seq) model which translates English sentences into their corresponding French sentences.
-
-![English to French Translation using Seq2Seq](https://miro.medium.com/max/1400/1*wPqahJXFKt8RPPgZvETUpw.jpeg)
-
-![Neural Language Translation Architecture](https://miro.medium.com/max/1400/1*EPDNg1M45JXkASby_HiVOg.png)
+# English-to-French Language Translation using Seq2Seq Model
 
 ## Overview
-
-Neural Machine Translation, also referred to as Neural MT, NMT, Deep Neural Machine Translation, Deep NMT, or DNMT, is a cutting-edge machine translation method that uses neural network techniques to estimate the likelihood of a sequence of words. This might be a word or sentence in its entirety, or thanks to recent developments, the entire document. Deep neural networks and artificial intelligence are used in NMT to train neural models, which is a fundamentally different approach to the problem of language translation and localization. In just three years, there has been a significant shift from SMT to NMT, making NMT the main machine translation methodology. With superior fluency and adequacy than statistical machine translation methods, neural machine translation often delivers translations of a significantly higher quality. 
-
-Only a small portion of the memory required by conventional Statistical Machine Translation (SMT) models is used by neural machine translation. Because the neural translation model is trained end-to-end to maximise translation performance, this NMT approach differs from traditional translation SMT systems. In contrast to the conventional phrase-based translation system, which consists of numerous small sub-components that are tuned separately, neural machine translation aims to create and train a single, massive neural network that can read a sentence and produce an accurate translation. 
+This project demonstrates the use of a Sequence-to-Sequence (Seq2Seq) model for English-to-French translation. By leveraging deep learning techniques, particularly Neural Machine Translation (NMT), the model efficiently translates English sentences into French. The model is trained end-to-end, ensuring improved fluency and accuracy compared to traditional statistical machine translation methods.
 
 ## Dataset Used
+The dataset used for training consists of English sentences and their corresponding French translations.
 
-Link: https://www.kaggle.com/datasets/devicharith/language-translation-englishfrench
-
-## Content
-
-The dataset comprises 2 columns, one of which includes English words/sentences and the other contains the corresponding French words/sentences i.e. French translations. 
+**Dataset Link:** [Kaggle - English-French Translation Dataset](https://www.kaggle.com/datasets/devicharith/language-translation-englishfrench)
 
 ## Python Libraries Used
+- Keras
+- TensorFlow
+- Scikit-learn
+- NumPy
+- Pandas
+- Seaborn
+- Matplotlib
 
-<ul>
-  <li>Keras</li>
-  <li>Tensorflow</li>
-  <li>Scikit-learn</li>
-  <li>Numpy</li>
-  <li>Pandas</li>
-  <li>Seaborn</li>
-  <li>Matplotlib</li>
-</ul>
+## Model Architecture
+The Seq2Seq model consists of an encoder-decoder structure, where:
+- The **encoder** processes the input English sentence and converts it into a context vector.
+- The **decoder** uses this context vector to generate the translated French sentence.
 
-## Acknowledgements
+## Implementation Steps
+1. Data Preprocessing
+2. Model Building (Encoder-Decoder Architecture)
+3. Training the Model
+4. Evaluating and Testing the Model
+5. Translating Sample Sentences
 
-For getting more datasets of distinct languages, refer to the following link: http://www.manythings.org/anki/
+## Usage
+Run the provided Python script to train and evaluate the translation model. Modify the input sentences to test custom translations.
+
+## Results
+The trained Seq2Seq model provides accurate English-to-French translations with improved fluency and coherence compared to traditional translation techniques.
+
+## References
+- [Sequence-to-Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)
+- [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)
+
